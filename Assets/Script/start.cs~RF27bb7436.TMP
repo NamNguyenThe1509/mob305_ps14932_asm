@@ -1,0 +1,56 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class start : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public static int count=0;
+    public GameObject zombie;
+    static readonly CancellationTokenSource s_cts = new CancellationTokenSource();
+    void Start()
+    {
+        s_cts.CancelAfter(10000);
+        spawnZombie();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void batDau()
+    {
+        SceneManager.LoadScene("ManChoi");
+    }
+    public void batDaulv1()
+    {
+        SceneManager.LoadScene("Man1");
+    }
+    public void batDaulv2()
+    {
+        SceneManager.LoadScene("Man2");
+    }
+    public void backManChoi()
+    {
+        SceneManager.LoadScene("ManChoi");
+    }
+   async Task spawnZombie()
+    {
+       // int count = 0;
+        while (count < 10)
+        {
+            await Task.Delay(3000);
+            Instantiate(zombie, new Vector3(9, -1, 0), Quaternion.identity);
+         //   count++;
+        }
+    }
+    public void OnApplicationQuit()
+    {
+        count = 100;
+    }
+}

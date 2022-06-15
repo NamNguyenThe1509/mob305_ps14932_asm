@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Man1.unity
+    guid: d33166a8eaba63a41950f524fb8bc827
+  - enabled: 1
+    path: Assets/Scenes/Man2.unity
+    guid: 9a4e1da7740e8a54ba6d9ae1e42c2883
+  - enabled: 1
+    path: Assets/Scenes/DangNhap.unity
+    guid: 794dfaa736ffc9a4cb6577cec8d4e651
+  - enabled: 1
+    path: Assets/Scenes/ManChoi.unity
+    guid: 98cb7e214ca2b45449aba1c413da0047
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: b96ee0f113834104c90b59e9f6674a97
+  - enabled: 1
+    path: Assets/Scenes/ChonNhanVat.unity
+    guid: 3bfe71a08343a3348b1eb19f21dd95eb
+  - enabled: 1
+    path: Assets/Scenes/DangKy.unity
+    guid: 6de606392d737c7448eb1ac374251beb
+  m_configObjects: {}
